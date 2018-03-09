@@ -677,6 +677,178 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://xinxiandong.cn/2017/12/09/产品细节-科普贴/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xinxiandong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xiandong's Home">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/09/产品细节-科普贴/" itemprop="url">产品细节&科普贴</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-09T14:32:31+08:00">
+                2017-12-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/12/09/产品细节-科普贴/" class="leancloud_visitors" data-flag-title="产品细节&科普贴">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="产品细节参考"><a href="#产品细节参考" class="headerlink" title="产品细节参考"></a>产品细节参考</h1><h2 id="一、小红点"><a href="#一、小红点" class="headerlink" title="一、小红点"></a>一、小红点</h2><p>【小红点】又成为【Badge】（徽标），通常指出现在图标或文字右上角的红色圆点、数字或者文字，表示有新内容或者未读内容。<br><img src="http://7viid6.com1.z0.glb.clouddn.com/18-3-9/51642129.jpg" alt="小红点"></p>
+<p><strong>Q1：</strong>为什么微信公众号将 “数字” 改为”小红点”+”数字”模式？<br><strong>A1：</strong><br>1、用户心理角度，”数字红点”给人的压力更大，尤其未读较多时。未读消息较多时，信息获取略显混乱；<br>2、数字红点可能会带来反作用——未读消息过多，可能会导致取消关注。</p>
+<h3 id="无数字-VS-有数字"><a href="#无数字-VS-有数字" class="headerlink" title="无数字 VS 有数字"></a>无数字 VS 有数字</h3><p>1 使用场景</p>
+<ul>
+<li>无数字（小红点）：<ul>
+<li>只需要让用户了解 有更新</li>
+<li>新内容只有一条   </li>
+</ul>
+</li>
+<li>有数字：<ul>
+<li>精确了解有<strong>多少条</strong>更新，且新内容有多条</li>
+<li>带来的<strong>心理压力</strong>更大，也会<strong>更有吸引力</strong></li>
+</ul>
+</li>
+</ul>
+<p>2 注意事项</p>
+<ul>
+<li>注意根据 <strong>场景</strong> 和 <strong>信息类型</strong> 决定 <strong>最长显示</strong> 多少位，到达字数上线如何显示。</li>
+<li>谨慎在图标内使用红点</li>
+</ul>
+<p>3 实现逻辑</p>
+<ul>
+<li>初始值从服务器获取</li>
+<li>点击时本地取消小红点</li>
+<li>在页面退出时，统一请求和上传一次红点数据，防止多次请求。</li>
+<li>红点有级别区分，可建立层级关系，级别高的可管理级别低的。</li>
+</ul>
+<p>参考地址：（1）<a href="https://www.jianshu.com/p/292dab3898e9" target="_blank" rel="noopener">https://www.jianshu.com/p/292dab3898e9</a></p>
+<p>（2）<a href="http://www.qidianlife.com/Singular/index.php?m=Home&amp;c=Discover&amp;a=article&amp;id=4327&amp;category=ios" target="_blank" rel="noopener">http://www.qidianlife.com/Singular/index.php?m=Home&amp;c=Discover&amp;a=article&amp;id=4327&amp;category=ios</a><br>（3）QQ小红点「一键下班」：<a href="http://www.uisdc.com/qq-1-key-off-work" target="_blank" rel="noopener">http://www.uisdc.com/qq-1-key-off-work</a><br><img src="http://7viid6.com1.z0.glb.clouddn.com//18-3-9/17856554.jpg" alt="微信层级"></p>
+<blockquote>
+<p><strong>层级：<br>场景：<br>展现形式：<br>用户：<br>交互机制：</strong></p>
+</blockquote>
+<h2 id="二、Skeleton-Screen-加载占位图"><a href="#二、Skeleton-Screen-加载占位图" class="headerlink" title="二、Skeleton Screen / 加载占位图"></a>二、Skeleton Screen / 加载占位图</h2><p>介绍：加载控件，加载过程中的 <strong>占位</strong> 或 <strong>过渡效果</strong><br><img src="https://upload-images.jianshu.io/upload_images/5089-223dab032ae0d908.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt=""></p>
+<h4 id="Progress-Indicator-进度指示条"><a href="#Progress-Indicator-进度指示条" class="headerlink" title="Progress Indicator 进度指示条"></a>Progress Indicator 进度指示条</h4><p>Activity Indicator（活动指示器，例如菊花转）&amp; Progress Bar（进度条）</p>
+<h3 id="加载占位图"><a href="#加载占位图" class="headerlink" title="加载占位图"></a>加载占位图</h3><ul>
+<li>把内容的 <strong>大概轮廓</strong> 预先展示出来，再逐步展示真正的内容。</li>
+<li>内容逐渐加载 <strong>即将呈现的期待</strong>，降低 <strong>焦躁的情绪</strong><br><img src="http:upload-images.jianshu.io/upload_images/5089-09db05d2f2d26e1c.gif" alt=""></li>
+</ul>
+<h3 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h3><ul>
+<li>适用于布局<strong>排版固定</strong>的内容区域</li>
+<li>建议配合<strong>其他加载</strong>技术一起使用</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://xinxiandong.cn/2016/08/07/中国支付体系文章/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1499,152 +1671,13 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://xinxiandong.cn/2015/04/17/滴滴拼车的一些想法/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="xinxiandong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Xiandong's Home">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/04/17/滴滴拼车的一些想法/" itemprop="url">滴滴拼车的一些想法</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-04-17T21:28:35+08:00">
-                2015-04-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2015/04/17/滴滴拼车的一些想法/" class="leancloud_visitors" data-flag-title="滴滴拼车的一些想法">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><img src="http://upload-images.jianshu.io/upload_images/30905-f879245c774484f5.png" alt="滴滴拼车定位"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/30905-3361d0d9b9ac7895.png" alt="拼车的分类"></p>
-<h3 id="一、场景描述："><a href="#一、场景描述：" class="headerlink" title="一、场景描述："></a>一、场景描述：</h3><p><img src="http://upload-images.jianshu.io/upload_images/30905-8bf19d47666f7508.png" alt="场景描述"></p>
-<ol>
-<li><p><strong>拼车的三种形式：</strong>城际、城乡、上下班（形式基本形同，实现方式不同）</p>
-</li>
-<li><p><strong>拼车使用对象：</strong>有拼车、交友意向的滴滴用户</p>
-</li>
-<li><p><strong>拼车发展方向：</strong>1）基于LBS的交友和旅行；2）基于兴趣爱好、地理位置的社区</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2015/04/17/滴滴拼车的一些想法/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -1688,7 +1721,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
